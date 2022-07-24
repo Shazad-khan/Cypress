@@ -1,7 +1,6 @@
 name: "Terraform GitHub Actions"
 
-on: 
-	push:
+on: [push]
 		branch:
 			- master
 jobs:
