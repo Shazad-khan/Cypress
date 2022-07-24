@@ -1,17 +1,18 @@
 name: "Terraform GitHub Actions"
 
-on: push
-		branch-ignore:
+on: 
+	push:
+		branch:
 			- master
 jobs:
 	terraform:
-		name: Terraform Init
+		name: "Terraform Init"
 		runs-on: ubuntu-latest
 		steps:
 		-	name: Checkout 
 			uses: actions/checkout@master
 		-	name: Terraform Initialization
-			uses: hashicorp/terraform-github-actions@master
+			uses: Shazad-khan/Cypress@master
 			with:
 				tf_actions_version: 0.12.18
 				tf_actions_subcommands: "init"
