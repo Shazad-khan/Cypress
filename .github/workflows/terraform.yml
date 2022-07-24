@@ -1,8 +1,6 @@
 name: "Terraform GitHub Actions"
 
 on: [push]
-	branch:
-	 - master
 jobs:
 	terraform:
 		name: "Terraform Init"
