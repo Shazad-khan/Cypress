@@ -11,10 +11,7 @@ describe("Green comute",()=>{
         cy.fixture('Greencomute.json').then((user)=>{
             cy.get("#combo-box-demo").type(user.Current_location)
             cy.get(".MuiAutocomplete-listbox").click()
-    
             cy.get(".MuiButton-root").click()
-            
-        
         })
     })
 
